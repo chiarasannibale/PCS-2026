@@ -1,0 +1,14 @@
+Nella riga 12 del programma nella figura 1 si ha che il comando dato "(&y) [1] = 0;", prende il valore salvato nell'indirizzo successivo ad y e lo pone a 0. 
+Poiché il codice: 
+
+std::cout <<&x<< "\n"; //indirizzo di x 
+std::cout<<&y<< "\n";  //indirizzo di y
+std::cout<<&y+1<< "\n";//indirizzo di y+4 byte 
+
+restituisce sul terminale i seguenti indirizzi
+
+x ----> 0x7ffd479c6d40
+y ----> 0x7ffd479c6d3c
+&y+1 = 0x7ffd479c6d40
+
+Osserviamo che l'indirizzo di x e l'indirizzo successivo a quello di y coincidono, pertanto la x verrà sovrascritta dal codice a 0, per tale motivazione il programma restituisce 0 e non 1 (che sarebbe il valore che assegniamo alla x).

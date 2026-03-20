@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Werror=vla -rdynamic -Wl,--dependency-file=CMakeFiles/es2.dir/link.d CMakeFiles/es2.dir/algo_vari.cpp.o -o es2

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall  -rdynamic -Wl,--dependency-file=CMakeFiles/es3.dir/link.d CMakeFiles/es3.dir/esercizio3.cpp.o -o es3

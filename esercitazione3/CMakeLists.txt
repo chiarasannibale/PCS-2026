@@ -1,4 +1,3 @@
-
 project(es3) 
 
 set(CMAKE_CXX_STANDARD 20)

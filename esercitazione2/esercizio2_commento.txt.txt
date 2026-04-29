@@ -12,3 +12,7 @@ y ----> 0x7ffd479c6d3c
 &y+1 = 0x7ffd479c6d40
 
 Osserviamo che l'indirizzo di x e l'indirizzo successivo a quello di y coincidono, pertanto la x verrà sovrascritta dal codice a 0, per tale motivazione il programma restituisce 0 e non 1 (che sarebbe il valore che assegniamo alla x).
+
+Analogamente si osserva che gli indirizzi differiscono di 4 byte, ovvero della dimensione di un vettore di interi. Concludiamo che gli indirizzi sono contigui.
+
+

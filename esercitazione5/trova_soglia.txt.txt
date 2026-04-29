@@ -1,0 +1,12 @@
+Dato l'output del programma "misure_sorts.cpp", salvato nel file "tempi.csv", possiamo concludere ceh gli algoritmi più efficienti tra i 5 risultano essree Insertion sort e Quick sort. 
+Infatti si nota che all'aumentare della dimensione dell'array (n>1024) si ha che il QuickSort completa l'operazione in circa 0.00072 secondi, mentre algoritmi meno efficienti come il BubbleSort richiedono circa 0.19928 secondi.
+Questa differenza è dovuta alla complessità logaritmica del primo rispetto quella quadratica del secondo.
+Osservando i test su array di dimensioni ridotte (n < 64). L'InsertionSort registra tempi di esecuzione minori. Ad esempio, per n = 2, l'InsertionSort registra un tempo di circa 1.418e-08 secondi mentre il Quick Sort 1.727e-08 secondi.
+Pertanto un algoritmo più efficiente sarà quello che utilizza il Quick sort per array di grandi dimensioni l'insertion sort per array di piccolo dimensioni.
+Per determinare la soglia ottimale ho utilizzato un programma di test dedicato (confronti.cpp ) che ha evidenziato un punto di incrocio a N=53. 
+Tale punto d'incrocio è stato quindi trovato sperimentalmente andando a testare i due algoritmi, Insertion Sort e Quick Sort, su vettori di dimensione che va da 2 a 100. 
+Per ogni dimensione sono stati considerati 100 vettori andando dunque a ricavare una media stabile del tempo di esecuzione dell'algoritmo preso in considerazione.
+Notiamo dunque che l'Insertion Sort, inizialmente ordina i vettori in tempi minori rispetto al Quick Sort fintanto che la dimensione 53 non viene raggiunta.
+Ho usato questo valore di soglia come una costante per implementare il Quick Sort modificato in maniera da rendere tale algoritmo ancor più efficiente a livello computazione. 
+Infatti per dimensioni inferiori alla soglia si ha che gli algoritmi quadratici (Insertion Sort) sono più efficiente rispetto a quelli logaritmici (Quick Sort).
+

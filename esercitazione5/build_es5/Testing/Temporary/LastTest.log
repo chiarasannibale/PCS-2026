@@ -1,0 +1,83 @@
+Start testing: Apr 29 12:31 UTC
+----------------------------------------------------------
+1/5 Testing: bubblesort
+1/5 Test: bubblesort
+Command: "/home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5/test_bubblesort"
+Directory: /home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5
+"bubblesort" start time: Apr 29 12:31 UTC
+Output:
+----------------------------------------------------------
+Tutti i vettori e le stringhe testati sono stati ordinati con successo con Bubble Sort
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"bubblesort" end time: Apr 29 12:31 UTC
+"bubblesort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: insertionsort
+2/5 Test: insertionsort
+Command: "/home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5/test_insertionsort"
+Directory: /home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5
+"insertionsort" start time: Apr 29 12:31 UTC
+Output:
+----------------------------------------------------------
+Tutti i vettori e le stringhe testati sono stati ordinati con successo con Bubble Sort
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"insertionsort" end time: Apr 29 12:31 UTC
+"insertionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: selectionsort
+3/5 Test: selectionsort
+Command: "/home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5/test_selectionsort"
+Directory: /home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5
+"selectionsort" start time: Apr 29 12:31 UTC
+Output:
+----------------------------------------------------------
+Tutti i vettori e le stringhe testati sono stati ordinati con successo con Bubble Sort
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"selectionsort" end time: Apr 29 12:31 UTC
+"selectionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: mergesort
+4/5 Test: mergesort
+Command: "/home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5/test_mergesort"
+Directory: /home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5
+"mergesort" start time: Apr 29 12:31 UTC
+Output:
+----------------------------------------------------------
+Tutti i vettori e le stringhe testati sono stati ordinati con successo con Merge Sort
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mergesort" end time: Apr 29 12:31 UTC
+"mergesort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: quicksort
+5/5 Test: quicksort
+Command: "/home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5/test_quicksort"
+Directory: /home/pcsdocker/Data/PCS-2026/esercitazione5/build_es5
+"quicksort" start time: Apr 29 12:31 UTC
+Output:
+----------------------------------------------------------
+Tutti i vettori e le stringhe testati sono stati ordinati con successo con Quick Sort
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"quicksort" end time: Apr 29 12:31 UTC
+"quicksort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 29 12:31 UTC

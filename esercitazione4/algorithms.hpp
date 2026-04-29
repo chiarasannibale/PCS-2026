@@ -1,9 +1,14 @@
 #include <vector>
+
 #include <iostream>
 #include <optional>
 #include <algorithm> //funzioni per manipolazione di dati
 #include <utility>   //per usare le swap
 #include <limits>	 //usiamo inf dalla libreria standard
+
+#include <optional>
+#include <algorithm> //funzioni per manipolazione di dati
+#include <utility>   //per usare le swap
 
 template<typename T>
 bool is_sorted(const std::vector<T>& A)

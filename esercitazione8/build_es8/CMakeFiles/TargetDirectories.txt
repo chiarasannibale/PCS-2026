@@ -1,0 +1,3 @@
+/home/pcsdocker/Data/PCS-2026/esercitazione8/build_es8/CMakeFiles/test_grafi.dir
+/home/pcsdocker/Data/PCS-2026/esercitazione8/build_es8/CMakeFiles/edit_cache.dir
+/home/pcsdocker/Data/PCS-2026/esercitazione8/build_es8/CMakeFiles/rebuild_cache.dir

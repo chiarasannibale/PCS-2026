@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Werror=vla -Wno-sign-compare -Wl,--dependency-file=CMakeFiles/algoritmi_grafi.dir/link.d CMakeFiles/algoritmi_grafi.dir/main.cpp.o -o algoritmi_grafi

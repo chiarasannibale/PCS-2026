@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wshadow -Werror=vla -Wno-sign-compare -Wl,--dependency-file=CMakeFiles/gradiente_coniugato.dir/link.d CMakeFiles/gradiente_coniugato.dir/main.cpp.o -o gradiente_coniugato

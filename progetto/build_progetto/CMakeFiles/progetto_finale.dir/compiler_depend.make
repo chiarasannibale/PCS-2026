@@ -61,8 +61,11 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/c++/14/bits/list.tcc \
   /usr/include/c++/14/bits/locale_classes.h \
   /usr/include/c++/14/bits/locale_classes.tcc \
+  /usr/include/c++/14/bits/locale_conv.h \
   /usr/include/c++/14/bits/locale_facets.h \
   /usr/include/c++/14/bits/locale_facets.tcc \
+  /usr/include/c++/14/bits/locale_facets_nonio.h \
+  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
   /usr/include/c++/14/bits/localefwd.h \
   /usr/include/c++/14/bits/max_size_type.h \
   /usr/include/c++/14/bits/memory_resource.h \
@@ -76,6 +79,7 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/c++/14/bits/postypes.h \
   /usr/include/c++/14/bits/predefined_ops.h \
   /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/quoted_string.h \
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/ranges_algo.h \
   /usr/include/c++/14/bits/ranges_algobase.h \
@@ -136,6 +140,7 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
   /usr/include/c++/14/cstring \
+  /usr/include/c++/14/ctime \
   /usr/include/c++/14/cwchar \
   /usr/include/c++/14/cwctype \
   /usr/include/c++/14/debug/assertions.h \
@@ -151,12 +156,14 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/c++/14/fstream \
   /usr/include/c++/14/functional \
   /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/iomanip \
   /usr/include/c++/14/ios \
   /usr/include/c++/14/iosfwd \
   /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
   /usr/include/c++/14/limits \
   /usr/include/c++/14/list \
+  /usr/include/c++/14/locale \
   /usr/include/c++/14/map \
   /usr/include/c++/14/new \
   /usr/include/c++/14/numbers \
@@ -422,6 +429,7 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
@@ -540,7 +548,9 @@ CMakeFiles/progetto_finale.dir/main.cpp.o: /home/pcsdocker/Data/PCS-2026/progett
   /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -634,13 +644,15 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/eigen3/Eigen/src/Core/Random.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h:
 
-/usr/include/eigen3/Eigen/src/Core/Product.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
 
 /usr/include/c++/14/numbers:
 
@@ -653,10 +665,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /usr/include/eigen3/Eigen/Geometry:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/eigen3/Eigen/src/Core/Ref.h:
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
@@ -678,9 +686,9 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/c++/14/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
 
-/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+/usr/include/c++/14/iosfwd:
 
 /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
 
@@ -701,14 +709,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/eigen3/Eigen/src/SparseCore/SparseRef.h:
 
 /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/usr/include/eigen3/Eigen/src/Core/Block.h:
-
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
 
 /usr/include/eigen3/Eigen/src/Core/Array.h:
 
@@ -776,9 +776,23 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/asm-generic/types.h:
 
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/c++/14/locale:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/c++/14/limits:
+
+/usr/include/c++/14/iomanip:
+
+/usr/include/eigen3/Eigen/src/Core/Block.h:
+
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
 
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
 
@@ -814,6 +828,8 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/c++/14/cstdint:
 
+/usr/include/c++/14/ext/numeric_traits.h:
+
 /usr/include/c++/14/system_error:
 
 /usr/include/c++/14/cstdlib:
@@ -830,6 +846,16 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/c++/14/ostream:
 
+/usr/include/c++/14/climits:
+
+/usr/include/c++/14/cerrno:
+
+/usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h:
+
+/usr/include/c++/14/string:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
+
 /usr/include/c++/14/bits/list.tcc:
 
 /usr/include/c++/14/bits/istream.tcc:
@@ -837,12 +863,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
 
 /usr/include/c++/14/bits/iterator_concepts.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/14/bits/stl_map.h:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
 
@@ -859,6 +879,16 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/c++/14/bits/functexcept.h:
 
 /usr/include/c++/14/set:
+
+/usr/include/c++/14/clocale:
+
+/usr/include/c++/14/bits/basic_string.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+
+/usr/include/c++/14/bits/ranges_util.h:
+
+/usr/include/c++/14/bits/stl_vector.h:
 
 /usr/include/c++/14/deque:
 
@@ -908,11 +938,19 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/string.h:
 
+/usr/include/c++/14/bits/stl_map.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/14/bits/quoted_string.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/14/bits/algorithmfwd.h:
 
 /usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/include/c++/14/bits/locale_facets_nonio.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -944,10 +982,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/c++/14/bits/stl_tree.h:
 
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/c++/14/bits/string_view.tcc:
-
 /usr/include/c++/14/bit:
 
 /usr/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h:
@@ -969,12 +1003,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
 
 /home/pcsdocker/Data/PCS-2026/progetto/dfs.hpp:
-
-/usr/include/eigen3/Eigen/OrderingMethods:
-
-/usr/include/c++/14/bits/stl_stack.h:
-
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
 
 /usr/include/c++/14/bits/stl_function.h:
 
@@ -1038,6 +1066,8 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/eigen3/Eigen/IterativeLinearSolvers:
 
+/usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h:
+
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
@@ -1054,9 +1084,21 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/include/c++/14/climits:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/libintl.h:
+
+/usr/include/c++/14/bits/locale_conv.h:
 
 /usr/include/c++/14/bits/streambuf.tcc:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/usr/include/c++/14/bits/locale_facets_nonio.h:
+
+/usr/include/c++/14/bits/std_mutex.h:
 
 /usr/include/c++/14/bits/localefwd.h:
 
@@ -1071,14 +1113,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/c++/14/bits/memory_resource.h:
 
 /usr/include/c++/14/bits/max_size_type.h:
-
-/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
-
-/usr/include/c++/14/bits/ranges_util.h:
-
-/usr/include/c++/14/bits/basic_string.tcc:
-
-/usr/include/c++/14/bits/stl_vector.h:
 
 /usr/include/eigen3/Eigen/src/Core/Matrix.h:
 
@@ -1095,10 +1129,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/14/bits/nested_exception.h:
-
-/usr/include/c++/14/clocale:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
 
 /usr/include/c++/14/tr1/beta_function.tcc:
 
@@ -1146,8 +1176,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/linux/sched/types.h:
 
-/usr/include/c++/14/bits/std_mutex.h:
-
 /usr/include/c++/14/functional:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
@@ -1161,8 +1189,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
 
 /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
-
-/usr/include/c++/14/ext/numeric_traits.h:
 
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
@@ -1183,12 +1209,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/c++/14/bits/stl_tempbuf.h:
 
 /usr/include/linux/stddef.h:
-
-/usr/include/c++/14/cctype:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/14/vector:
 
@@ -1218,23 +1238,47 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/c++/14/cassert:
 
-/usr/include/c++/14/cerrno:
+/usr/include/eigen3/Eigen/OrderingMethods:
 
-/usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h:
+/usr/include/c++/14/bits/stl_stack.h:
 
-/usr/include/c++/14/string:
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/14/bits/string_view.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
 /usr/lib/x86_64-linux-gnu/libc.so:
 
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
 
-/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
 /usr/include/c++/14/bits/stl_uninitialized.h:
 
 /usr/include/c++/14/bits/locale_classes.h:
+
+/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
+
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/usr/include/c++/14/cctype:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/eigen3/Eigen/src/Core/Ref.h:
+
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
 /usr/lib/x86_64-linux-gnu/crti.o:
 
@@ -1363,6 +1407,10 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/eigen3/Eigen/src/Core/util/Macros.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/Meta.h:
 
@@ -1528,8 +1576,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/eigen3/Eigen/src/SparseCore/SparseDot.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
-
 /usr/include/eigen3/Eigen/src/SparseCore/SparseMap.h:
 
 /usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h:
@@ -1670,15 +1716,7 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -1690,6 +1728,8 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /lib/x86_64-linux-gnu/libmvec.so.1:
 
+/usr/include/c++/14/ctime:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -1698,6 +1738,12 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -1705,10 +1751,6 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h:
-
-/usr/include/c++/14/iosfwd:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
 
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
@@ -1731,15 +1773,3 @@ CMakeFiles/progetto_finale.dir/main.cpp.o:
 /usr/include/c++/14/bits/stl_heap.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:

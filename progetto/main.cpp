@@ -94,23 +94,23 @@ int main(int argc, const char *argv[]) {
 	int primo_nodo = *G.all_nodes().begin(); 
     std::vector<std::vector<int>> B1 = De_Pina(G, primo_nodo);
 	Eigen::MatrixXd matrice_B1 = costruzione_B(B1); 
-	Eigen::VectorXd vR1 = costruzione_v(G, matrice_B1, circuito);
+	
 	
 	
 	//risolviamo il sistema (consideriamo la matrice B_R ristretta ai resistori)
 	Eigen::MatrixXd matrice_B1_R = estrai_B_R(G, matrice_B1, circuito);
-	Eigen::VectorXd I_maglia_1= risoluzione_sistema( matrice_B1_R, R, vR1, it_max, res_tol); 
 	
-	
+	Eigen::VectorXd vR1 = costruzione_v(G, matrice_B1, circuito);
+	Eigen::VectorXd I_maglia_1= risoluzione_sistema(matrice_B1_R, R, vR1, it_max, res_tol); 
 	// CONTROLLO : verifico il residuo del sistema dopo la soluzione B^T R B * i = v
 	//il sistema è Ax=v, quindi il residuo sarà la norma di Ax-v
-	Eigen::MatrixXd A1 = matrice_B1.transpose() * R * matrice_B1; 
+	Eigen::MatrixXd A1 = matrice_B1_R.transpose() * R * matrice_B1_R; 
 	double residuo1 = (A1 * I_maglia_1 - vR1).norm();
 	if (residuo1 > 1e-5) {
 		std::cerr << "Attenzione: residuo alto dopo gradiente coniugato (De Pina): " << residuo1 << std::endl;
 	}
 	else { 
-		std::cout << "Residuo del gradiente coniugato accettabile:  "<< residuo2 << std::endl;
+		std::cout << "Residuo del gradiente coniugato accettabile:  "<< residuo1 << std::endl;
 	}
 
 	//stampa matrice
@@ -158,7 +158,7 @@ int main(int argc, const char *argv[]) {
 
 
 	// CONTROLLO: verifico il residuo del sistema
-	Eigen::MatrixXd A2 = matrice_B2.transpose() * R * matrice_B2;
+	Eigen::MatrixXd A2 = matrice_B2_R.transpose() * R * matrice_B2_R;
 	double residuo2 = (A2 * I_maglia_2 - vR2).norm();
 	if (residuo2 > 1e-5) {
 		std::cerr << "Attenzione: residuo alto dopo gradiente coniugato (DFS): " << residuo2 << std::endl;

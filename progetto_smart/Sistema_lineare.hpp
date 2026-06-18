@@ -33,7 +33,7 @@ Eigen::MatrixXd costruzione_R(
     for (const auto& comp : circuito) {
         if (!comp.get_tipo().empty() && comp.get_tipo()[0] == 'R') {
 			unidirected_edge<T> e(comp.from(), comp.to()); 
-            int idx = G.edge_number(e);
+            int idx = G.edge_number(e); 
             if (idx != -1) {
                 R(idx, idx) = comp.get_valore();
             }

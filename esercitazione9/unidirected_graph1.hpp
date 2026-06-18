@@ -99,7 +99,7 @@ public:
 	//RISPETTO L'ORDINE CON CUI E' STATO INSERITO NELLA LISTA_ARCHI
 	
 	//prendo in input l'arco e che voglio cercare
-	int edge_number(unidirected_edge<T>& e){
+	int edge_number(const unidirected_edge<T>& e) const {
 		
 		int count = 0; 
 		//itero nel registro degli archi dalla prima posizione fino all'ultima con l'iteratore itor
@@ -127,7 +127,7 @@ public:
 	// 7. - DIFFERENZA : G -G'
 	// operativamente il grafo differenza contiene tutti i nodi necessari ma 
 	// arch del primo grafo e non archi del secondo 
-	unidirected_graph operator- (const unidirected_graph& other) const{
+	unidirected_graph operator-(const unidirected_graph& other) const{
 		
 		// creo con costruttore di default un grafo vuoto
 		unidirected_graph differenza; 
